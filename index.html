@@ -6,10 +6,46 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
-<body>
-    <header>
-        <h1>Job Application Tracker</h1>
+<body class="bg-[#F1F2F4]">
+     <header class="w-[80%] mx-auto ">
+        <h1 class="text-4xl font-bold">Job Application Tracker</h1>
+        <br>
+        <div class="grid grid-cols-3 gap-8">
+            <div class="bg-white p-4">
+                <p>Total</p>
+                <p id="total" class="font-bold">0</p>
+            </div>
+
+            <div class="bg-white p-4">
+                <p>Interview</p>
+                <p id="InterviewCount" class="font-bold text-green-500">0</p>
+            </div>
+
+            <div class="bg-white p-4">
+                <p>Rejected</p>
+                <p id="RejectionCount" class="font-bold text-red-500">0</p>
+            </div>
+        </div>
     </header>
+    <hr class="my-5 mx-auto w-[80%]">
+    <main class="w-[80%] mx-auto">
+    <section>
+        <div class="flex justify-between">
+            <div>
+                <h2 class="text-2xl font-bold">Available Jobs</h2>
+            </div>
+            <div>
+                <p><span>8</span> jobs</p>
+            </div>
+        </div>
+    </section>
+    <div class="mt-4">
+            <button   class="bg-[#3B82F6] text-white px-10 py-3" id="all-filter-btn">All</button>
+            <button   class="bg-white px-6 py-3 text-gray-400" id="Interview-filter-btn">Interview</button>
+            <button  class="bg-white px-6 py-3 text-gray-400" id="Recjection-filter-btn">Rejected</button>
+        </div>
+    </main>
+
 
    <script src="script/script.js"></script> 
 </body>
