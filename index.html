@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body class="bg-[#F1F2F4]">
@@ -40,10 +41,258 @@
         </div>
     </section>
     <div class="mt-4">
-            <button   class="bg-[#3B82F6] text-white px-10 py-3" id="all-filter-btn">All</button>
-            <button   class="bg-white px-6 py-3 text-gray-400" id="Interview-filter-btn">Interview</button>
-            <button  class="bg-white px-6 py-3 text-gray-400" id="Recjection-filter-btn">Rejected</button>
+            <button onclick="toggleStyle('all-filter-btn')"    class="bg-blue-500 text-white px-10 py-3" id="all-filter-btn">All</button>
+            <button  onclick="toggleStyle('Interview-filter-btn')"   class="bg-white px-6 py-3 " id="Interview-filter-btn">Interview</button>
+            <button onclick="toggleStyle('Rejection-filter-btn')"  class="bg-white px-6 py-3 " id="Rejection-filter-btn">Rejected</button>
         </div>
+
+        <section id="allCards" class="space-y-6 mt-4">
+
+            <!-- card 1 -->
+            <div class="card flex justify-between  p-8 bg-white">
+                <!-- main part 1 -->
+                <div class="space-y-6">
+                    <!-- part 1 -->
+                    <div>
+                        <p class="mobile_thing font-bold text-2xl">Mobile First Corp</p>
+                        <p class="develop_thing text-gray-500">React Native Developer</p>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div class="flex gap-2  text-gray-500">
+                      <p class="location" >Remote</p>
+                      <p class="description"> •Full-time •$130,000 - $175,000</p>
+                    </div>
+                    <!-- part 3 -->
+                     <button class="status bg-[#EEF4FF] px-4 py-2.5">Not Applied</button>
+                     <p class="notes  text-gray-500">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+
+                     <div class="flex gap-5">
+                        <button class="interview-btn  bg-green-200 px-4 py-2 text-green-400">interview</button>
+                        <button class="rejected-btn bg-red-200 px-4 py-2 text-red-400">Rejected</button>
+                     </div>
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+            <!--card 2-->
+             <div class="card flex justify-between  p-8 bg-white">
+                <!-- main part 1 -->
+                <div class="space-y-6">
+                    <!-- part 1 -->
+                    <div>
+                        <p class="mobile_thing font-bold text-2xl">WebFlow Agency</p>
+                        <p class="develop_thing text-gray-500">Web Designer & Developer</p>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div class="flex gap-2  text-gray-500">
+                      <p class="location">Los Angeles, CA</p>
+                      <p class="description">• Part-time • $80,000 - $120,000</p>
+                    </div>
+                    <!-- part 3 -->
+                     <button class="status bg-[#EEF4FF] px-4 py-2.5">Not Applied</button>
+                     <p class="notes  text-gray-500">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+
+                     <div class="flex gap-5">
+                        <button class="interview-btn  bg-green-200 px-4 py-2 text-green-400">interview</button>
+                        <button class="rejected-btn bg-red-200 px-4 py-2 text-red-400">Rejected</button>
+                     </div>
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+            <!--card 3-->
+      <div class="card flex justify-between  p-8 bg-white">
+                <!-- main part 1 -->
+                <div class="space-y-6">
+                    <!-- part 1 -->
+                    <div>
+                        <p class="mobile_thing font-bold text-2xl">DataViz Solutions</p>
+                        <p class="develop_thing text-gray-500">Data Visualization Specialist</p>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div class="flex gap-2  text-gray-500">
+                      <p class="location"> Boston, MA</p>
+                      <p class="description">• Full-time • $125,000 - $165,000</p>
+                    </div>
+                    <!-- part 3 -->
+                     <button class="status bg-[#EEF4FF] px-4 py-2.5">Not Applied</button>
+                     <p class="notes  text-gray-500">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
+</p>
+
+                     <div class="flex gap-5">
+                        <button class="interview-btn  bg-green-200 px-4 py-2 text-green-400">interview</button>
+                        <button class="rejected-btn bg-red-200 px-4 py-2 text-red-400">Rejected</button>
+                     </div>
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+            <!--card 4-->
+             <div class="card flex justify-between  p-8 bg-white">
+                <!-- main part 1 -->
+                <div class="space-y-6">
+                    <!-- part 1 -->
+                    <div>
+                        <p class="mobile_thing font-bold text-2xl">CloudFirst Inc</p>
+                        <p class="develop_thing text-gray-500">Backend Developer</p>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div class="flex gap-2  text-gray-500">
+                      <p class="location"  >Seattle, WA</p>
+                      <p  class="description"> •Full-time • $140,000 - $190,000</p>
+                    </div>
+                    <!-- part 3 -->
+                     <button class="status bg-[#EEF4FF] px-4 py-2.5">Not Applied</button>
+                     <p class="notes  text-gray-500">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+
+                     <div class="flex gap-5">
+                        <button class="interview-btn  bg-green-200 px-4 py-2 text-green-400">interview</button>
+                        <button class="rejected-btn bg-red-200 px-4 py-2 text-red-400">Rejected</button>
+                     </div>
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+            
+            <!--card 5-->
+             <div class="card flex justify-between  p-8 bg-white">
+                <!-- main part 1 -->
+                <div class="space-y-6">
+                    <!-- part 1 -->
+                    <div>
+                        <p class="mobile_thing font-bold text-2xl">Innovation Labs</p>
+                        <p class="develop_thing text-gray-500">UI/UX Engineer</p>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div class="flex gap-2  text-gray-500">
+                      <p class="location" >Austin, TX</p>
+                      <p  class="description"> •Full-time • $110,000 - $150,000</p>
+                    </div>
+                    <!-- part 3 -->
+                     <button class="status bg-[#EEF4FF] px-4 py-2.5">Not Applied</button>
+                     <p class="notes  text-gray-500">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+
+                     <div class="flex gap-5">
+                        <button class="interview-btn  bg-green-200 px-4 py-2 text-green-400">interview</button>
+                        <button class="rejected-btn bg-red-200 px-4 py-2 text-red-400">Rejected</button>
+                     </div>
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+            <!--card 6-->
+             <div class="card flex justify-between  p-8 bg-white">
+                <!-- main part 1 -->
+                <div class="space-y-6">
+                    <!-- part 1 -->
+                    <div>
+                        <p class="mobile_thing font-bold text-2xl">MegaCorp Solutions</p>
+                        <p class="develop_thing text-gray-500">JavaScript Developer</p>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div class="flex gap-2  text-gray-500">
+                      <p class="location" >New York, NY</p>
+                      <p class="description"> •Full-time •$130,000 - $170,000</p>
+                    </div>
+                    <!-- part 3 -->
+                     <button class="status bg-[#EEF4FF] px-4 py-2.5">Not Applied</button>
+                     <p class="notes  text-gray-500">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+
+                     <div class="flex gap-5">
+                        <button class="interview-btn  bg-green-200 px-4 py-2 text-green-400">interview</button>
+                        <button class="rejected-btn bg-red-200 px-4 py-2 text-red-400">Rejected</button>
+                     </div>
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+            <!--card 7-->
+             <div class="card flex justify-between  p-8 bg-white">
+                <!-- main part 1 -->
+                <div class="space-y-6">
+                    <!-- part 1 -->
+                    <div>
+                        <p class="mobile_thing font-bold text-2xl">StartupXYZ</p>
+                        <p class="develop_thing text-gray-500">Full Stack Engineer</p>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div class="flex gap-2  text-gray-500">
+                      <p class="location" >Remote</p>
+                      <p class="description"> •Full-time •$130,000 - $160,000</p>
+                    </div>
+                    <!-- part 3 -->
+                     <button class="status bg-[#EEF4FF] px-4 py-2.5">Not Applied</button>
+                     <p class="notes  text-gray-500">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+
+                     <div class="flex gap-5">
+                        <button class="interview-btn  bg-green-200 px-4 py-2 text-green-400">interview</button>
+                        <button class="rejected-btn bg-red-200 px-4 py-2 text-red-400">Rejected</button>
+                     </div>
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+            <!--card 8-->
+             <div class="card flex justify-between  p-8 bg-white">
+                <!-- main part 1 -->
+                <div class="space-y-6">
+                    <!-- part 1 -->
+                    <div>
+                        <p class="mobile_thing font-bold text-2xl">TechCorp Industries</p>
+                        <p class="develop_thing text-gray-500">Senior Frontend Developer</p>
+                    </div>
+
+                    <!-- part 2 -->
+                    <div class="flex gap-2  text-gray-500">
+                      <p class="location" >San Francisco, CA</p>
+                      <p class="description"> •Full-time •$130,000 - $175,000</p>
+                    </div>
+                    <!-- part 3 -->
+                     <button class="status bg-[#EEF4FF] px-4 py-2.5">Not Applied</button>
+                     <p class="notes  text-gray-500">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+
+                     <div class="flex gap-5">
+                        <button class="interview-btn  bg-green-200 px-4 py-2 text-green-400">interview</button>
+                        <button class="rejected-btn bg-red-200 px-4 py-2 text-red-400">Rejected</button>
+                     </div>
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
 
