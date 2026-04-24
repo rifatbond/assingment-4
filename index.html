@@ -45,6 +45,9 @@
             <button  onclick="toggleStyle('Interview-filter-btn')"   class="bg-white px-6 py-3 " id="Interview-filter-btn">Interview</button>
             <button onclick="toggleStyle('Rejection-filter-btn')"  class="bg-white px-6 py-3 " id="Rejection-filter-btn">Rejected</button>
         </div>
+         <section id="filtered-section" class="hidden">
+
+        </section>
 
         <section id="allCards" class="space-y-6 mt-4">
 
@@ -54,8 +57,8 @@
                 <div class="space-y-6">
                     <!-- part 1 -->
                     <div>
-                        <p class="mobile_thing font-bold text-2xl">Mobile First Corp</p>
-                        <p class="develop_thing text-gray-500">React Native Developer</p>
+                        <p class="mobileThing font-bold text-2xl">Mobile First Corp</p>
+                        <p class="developThing text-gray-500">React Native Developer</p>
                     </div>
 
                     <!-- part 2 -->
@@ -74,7 +77,7 @@
                 </div>
 
                 <!-- main part 2 -->
-                <div>
+                <div id="delete">
                     <i class="fa-regular fa-trash-can"></i>
                 </div>
             </div>
@@ -84,8 +87,8 @@
                 <div class="space-y-6">
                     <!-- part 1 -->
                     <div>
-                        <p class="mobile_thing font-bold text-2xl">WebFlow Agency</p>
-                        <p class="develop_thing text-gray-500">Web Designer & Developer</p>
+                        <p class="mobileThing font-bold text-2xl">WebFlow Agency</p>
+                        <p class="developThing text-gray-500">Web Designer & Developer</p>
                     </div>
 
                     <!-- part 2 -->
@@ -114,8 +117,8 @@
                 <div class="space-y-6">
                     <!-- part 1 -->
                     <div>
-                        <p class="mobile_thing font-bold text-2xl">DataViz Solutions</p>
-                        <p class="develop_thing text-gray-500">Data Visualization Specialist</p>
+                        <p class="mobileThing font-bold text-2xl">DataViz Solutions</p>
+                        <p class="developThing text-gray-500">Data Visualization Specialist</p>
                     </div>
 
                     <!-- part 2 -->
@@ -145,8 +148,8 @@
                 <div class="space-y-6">
                     <!-- part 1 -->
                     <div>
-                        <p class="mobile_thing font-bold text-2xl">CloudFirst Inc</p>
-                        <p class="develop_thing text-gray-500">Backend Developer</p>
+                        <p class="mobileThing font-bold text-2xl">CloudFirst Inc</p>
+                        <p class="developThing text-gray-500">Backend Developer</p>
                     </div>
 
                     <!-- part 2 -->
@@ -176,8 +179,8 @@
                 <div class="space-y-6">
                     <!-- part 1 -->
                     <div>
-                        <p class="mobile_thing font-bold text-2xl">Innovation Labs</p>
-                        <p class="develop_thing text-gray-500">UI/UX Engineer</p>
+                        <p class="mobileThing font-bold text-2xl">Innovation Labs</p>
+                        <p class="developThing text-gray-500">UI/UX Engineer</p>
                     </div>
 
                     <!-- part 2 -->
@@ -206,8 +209,8 @@
                 <div class="space-y-6">
                     <!-- part 1 -->
                     <div>
-                        <p class="mobile_thing font-bold text-2xl">MegaCorp Solutions</p>
-                        <p class="develop_thing text-gray-500">JavaScript Developer</p>
+                        <p class="mobileThing font-bold text-2xl">MegaCorp Solutions</p>
+                        <p class="developThing text-gray-500">JavaScript Developer</p>
                     </div>
 
                     <!-- part 2 -->
@@ -236,8 +239,8 @@
                 <div class="space-y-6">
                     <!-- part 1 -->
                     <div>
-                        <p class="mobile_thing font-bold text-2xl">StartupXYZ</p>
-                        <p class="develop_thing text-gray-500">Full Stack Engineer</p>
+                        <p class="mobileThing font-bold text-2xl">StartupXYZ</p>
+                        <p class="developThing text-gray-500">Full Stack Engineer</p>
                     </div>
 
                     <!-- part 2 -->
@@ -266,8 +269,8 @@
                 <div class="space-y-6">
                     <!-- part 1 -->
                     <div>
-                        <p class="mobile_thing font-bold text-2xl">TechCorp Industries</p>
-                        <p class="develop_thing text-gray-500">Senior Frontend Developer</p>
+                        <p class="mobileThing font-bold text-2xl">TechCorp Industries</p>
+                        <p class="developThing text-gray-500">Senior Frontend Developer</p>
                     </div>
 
                     <!-- part 2 -->
@@ -289,6 +292,19 @@
                 <div>
                     <i class="fa-regular fa-trash-can"></i>
                 </div>
+            </div>
+
+        </section>
+
+        <section id="empty" class="hidden">
+            <div class="bg-white mx-auto w-{60%} p-8 mt-4">
+            <div class="flex justify-center">
+            <img  src="jobs.png" alt="">
+            </div>
+            <div class="text-center">
+            <h2 class="text-2xl font-bold">No jobs available</h2>
+            <p class="text-gray-500">Check back soon for new job opportunities</p>
+            </div>
             </div>
 
         </section>
